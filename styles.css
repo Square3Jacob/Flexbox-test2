@@ -1,19 +1,23 @@
-* {
+/* * {
     outline: 2px solid red;
-}
+} */
 
 body {
-  margin: 10px 200px 100px;
+  max-width: 1000px;
+  margin: 10px auto;
+  background-color: black;
 }
 
 .nav {
-  display:flex;
+  display: flex;
   gap: 20px;
+  background-color: blueviolet;
 }
 
 .navitem {
   display: block;
-  padding: 20px;
+  padding: 10px;
+  color: bisque;
 }
 
 .login {
@@ -29,16 +33,37 @@ img {
 .media {
   border: 2px dotted rgb(96 139 168);
   display: flex;
-  align-items: flex-start;
 }
 
 .media .content {
   flex: 1;
   padding: 10px;
+  background-color: gray;
+  color: bisque;
 }
 
 .main {
   display: flex;
   flex-direction: column;
+  height: 2000px;
+  flex: 1;
   gap: 20px;
+}
+
+
+.item {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  outline: 2px solid blue;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: aquamarine;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
