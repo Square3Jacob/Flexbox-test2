@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: 2px solid red;
-} */
+}
 
 body {
   margin: 10px 200px 100px;
@@ -9,11 +9,11 @@ body {
 .nav {
   display:flex;
   gap: 20px;
-  padding: 20px;
 }
 
 .navitem {
   display: block;
+  padding: 20px;
 }
 
 .login {
