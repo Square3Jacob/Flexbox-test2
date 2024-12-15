@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: 2px solid red;
-}
+} */
 
 body {
   max-width: 1000px;
@@ -10,7 +10,8 @@ body {
 
 .nav {
   display: flex;
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 2px;
   background-color: blueviolet;
 }
 
@@ -18,6 +19,7 @@ body {
   display: block;
   padding: 10px;
   color: bisque;
+  flex: 1, 1, 15px;
 }
 
 .login {
@@ -25,9 +27,9 @@ body {
 }
 
 img {
-  max-width: 100%;
+  flex: 1;
+  max-width: 100px;
   display: block;
-  max-width: 100px
 }
 
 .media {
@@ -36,7 +38,7 @@ img {
 }
 
 .media .content {
-  flex: 1;
+  flex: 3;
   padding: 10px;
   background-color: gray;
   color: bisque;
@@ -45,9 +47,13 @@ img {
 .main {
   display: flex;
   flex-direction: column;
-  flex: 2000px;
+  height: 2000px;
   flex: 1;
   gap: 20px;
+}
+
+.flipped {
+  flex-direction: row-reverse;
 }
 
 
@@ -62,10 +68,19 @@ img {
 
 .container {
   background-color: aquamarine;
-  height: 200px;
+  min-height: 200px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
+}
+
+@media all and (max-width: 447px) {
+  .nav, .login {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 0;
+    margin: 0;
+  }
 }
