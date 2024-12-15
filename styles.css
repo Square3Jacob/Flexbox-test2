@@ -75,6 +75,7 @@ img {
   flex-wrap: wrap;
   align-content: center;
   gap: 10px;
+  padding: 10px;
 }
 
 @media all and (max-width: 447px) {
