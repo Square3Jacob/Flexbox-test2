@@ -15,6 +15,10 @@ body {
   background-color: blueviolet;
 }
 
+.nav :hover {
+  background-color: rgb(111, 0, 214);
+}
+
 .navitem {
   display: block;
   padding: 10px;
