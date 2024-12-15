@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Signup</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<style>
+
+.signup {
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+form {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.name {
+    flex-grow: 1;
+    flex-basis: 160px;
+}
+
+.email {
+    flex-grow: 3;
+    flex-basis: 200px;
+}
+
+.button {
+    flex-grow: 1;
+    flex-basis: 80px;
+}
+
+body {
+    height: 500px;
+}
+
+</style>
+
+
+<body>
+
+    <div class="nav">
+        <a class="navitem" href="../flex.html">Home</a>
+        <a class="navitem">Blog</a>
+        <a class="navitem">About</a>
+        <a class="navitem">Other</a>
+        <a class="navitem login" href="sites/login.html">Login</a>
+    </div>
+
+    <div class="signup">
+        <form>
+            <input class="name" type="text" placeholder="Name">
+            <input class="email" type="email" placeholder="Email Address">
+            <input class="button" type="submit" value="Register">
+        </form>        
+    </div>
+
+
+</body>
+</html>
